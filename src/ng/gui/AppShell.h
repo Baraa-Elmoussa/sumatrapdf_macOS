@@ -165,6 +165,8 @@ void AppShellHandleOpenDocs();
 void AppShellOpenDocsReady();
 // trackpad pinch zooms the document under the pointer
 void AppShellHandleMagnify();
+TempStr AppShellCaptureWindowTemp(MainWindow* win, Str path, Str mode);
+void AppShellMakeKeyWindow(MainWindow* win);
 #endif
 // presentation mode's auto-hidden cursor (orig hides it with SetCursor(null))
 void AppShellShowCursor(MainWindow* win, bool show);

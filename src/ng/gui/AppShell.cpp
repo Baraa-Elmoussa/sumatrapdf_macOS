@@ -83,6 +83,7 @@
 #include "AnnotFilterToolbar.h"
 #include "AnnotPlacement.h"
 #include "AnnotTextPopup.h"
+#include "MeasurementToolbar.h"
 #include "RefHover.h"
 #include "FormFields.h"
 #include "ImageSaveCropResize.h"
@@ -2942,6 +2943,11 @@ void ShellView::OnKeyDown(ShellView* self, gp::Ctx* cx, const gp::KeyEvent* ev) 
             ReadingAutoScrollStop(win);
         } else if (ReadingBarIsOn(win)) {
             ReadingBarHide(win);
+        } else if (win->measurementToolbar) {
+            // the first Esc drops the measurement being clicked, the next closes the tool
+            if (!MeasurementCancel(win)) {
+                CloseMeasurement(win);
+            }
         } else if (IsFindEditFocused(win)) {
             // orig's FindBarWnd::OnKeyDown: Esc goes to the focused window
             HideFindBar(win);
