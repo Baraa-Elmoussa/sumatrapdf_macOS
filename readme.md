@@ -18,6 +18,8 @@ toolbar, the menu bar, a command palette (`Cmd + K`) and Mac shortcuts
 With" for PDF, EPUB, DjVu, XPS, CHM, comic books, ebooks and images. A file
 that changes on disk reloads by itself; `R` reloads it by hand.
 
+![SumatraPDF on macOS](docs/mac/mac-main.png)
+
 Build and run (needs [bun](https://bun.sh/) and the Xcode command line tools):
 
 ```sh
@@ -36,15 +38,30 @@ Built and tested on Apple Silicon.
   text is highlighted and its comment editor opens. Hover the highlight to
   read the comment; the card has **Edit** and color swatches. Comments are
   standard PDF highlight annotations, saved with the document.
+
+  ![Comment card on a highlight](docs/mac/mac-comment-card.png)
+
 - **Colors.** Rest the pointer on **Highlight** or **Add comment** to pick a
   color. Each button remembers its own (`HighlightColor`, `CommentColor`).
+
+  ![Color menu on the selection toolbar](docs/mac/mac-selection-colors.png)
+
 - **Highlight outline.** The marker of a selected highlight follows its
   lines instead of boxing all of them, and Edit PDF shows no metadata card
   over highlights.
+- **Measure.** `CmdMeasure` (View menu) opens the Measure window: length,
+  rectangle area, radius and guide lines, calibrated to a known length.
+  Clicks can snap to the page's vector lines; `Cmd + click` deletes a
+  measurement.
+
+  ![Measure tool](docs/mac/mac-measure.png)
+
 - **AI chat.** A toolbar button (`CmdToggleAIChat`) shows and hides the chat
   panel. Closing the panel removes it and keeps the conversation.
 
+  ![AI chat panel](docs/mac/mac-ai-chat.png)
+
 ### Not on macOS yet
 
-PDF signing, a print dialog with printer settings, the measuring tool,
-dragging a selection into another app, an installer.
+PDF signing, a print dialog with printer settings, dragging a selection
+into another app, an installer.
