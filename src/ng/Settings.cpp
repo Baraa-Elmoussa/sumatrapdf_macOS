@@ -1149,7 +1149,7 @@ static const FieldInfo gSettingsFields[] = {
     {offsetof(Settings, showAnnotationNotification), SettingType::Bool, true},
     {offsetof(Settings, showFileNavigateHint), SettingType::Bool, true},
     {offsetof(Settings, showAnnotationAuthorInTooltip), SettingType::Bool, false},
-    {offsetof(Settings, showTocPageNumbers), SettingType::Bool, true},
+    {offsetof(Settings, showTocPageNumbers), SettingType::Bool, false},
     {offsetof(Settings, tocWrapText), SettingType::Bool, false},
     {offsetof(Settings, autoGenerateTOC), SettingType::Bool, false},
     {offsetof(Settings, showStartPage), SettingType::Bool, true},

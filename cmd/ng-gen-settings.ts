@@ -1888,7 +1888,7 @@ const globalPrefs: Field[] = [
   field(
     "ShowTocPageNumbers",
     Bool,
-    true,
+    false,
     "if true, show page numbers (labels) right-aligned on bookmark / table-of-contents entries",
   ).ver("3.7"),
   field(
